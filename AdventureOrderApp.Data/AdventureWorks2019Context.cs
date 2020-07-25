@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Logging;
 
 namespace AdventureOrderApp.Data
 {
@@ -108,12 +109,16 @@ namespace AdventureOrderApp.Data
         // Unable to generate entity type for table 'Production.Document'. Please see the warning messages.
         // Unable to generate entity type for table 'Production.ProductDocument'. Please see the warning messages.
 
+        public static readonly ILoggerFactory ConsoleLoggerFactory = LoggerFactory.Create(builder =>
+        {
+            builder.AddFilter((category, level) => category == DbLoggerCategory.Database.Command.Name && level == LogLevel.Information).AddConsole();
+        });
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=AdventureWorks2019;Trusted_Connection=True;");
+                optionsBuilder.UseLoggerFactory(ConsoleLoggerFactory).UseSqlServer("Server=.\\SQLEXPRESS;Database=AdventureWorks2019;Trusted_Connection=True;");
             }
         }
 
@@ -4360,5 +4365,8 @@ namespace AdventureOrderApp.Data
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+    
     }
 }
+            

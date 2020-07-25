@@ -6,4 +6,3 @@ E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.
 E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.dll
 E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.pdb
 E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.csprojAssemblyReference.cache
-E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.csproj.CoreCompileInputs.cache
