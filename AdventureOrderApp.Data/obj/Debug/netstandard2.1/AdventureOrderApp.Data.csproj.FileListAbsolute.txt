@@ -1,0 +1,8 @@
+E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\bin\Debug\netstandard2.1\AdventureOrderApp.Data.deps.json
+E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\bin\Debug\netstandard2.1\AdventureOrderApp.Data.dll
+E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\bin\Debug\netstandard2.1\AdventureOrderApp.Data.pdb
+E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.AssemblyInfoInputs.cache
+E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.AssemblyInfo.cs
+E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.dll
+E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.pdb
+E:\source\repos\AdventureOrderApp\AdventureOrderApp.Data\obj\Debug\netstandard2.1\AdventureOrderApp.Data.csproj.CoreCompileInputs.cache
