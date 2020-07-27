@@ -48,3 +48,6 @@ E:\source\repos\AdventureOrderApp\AdventureOrderApp\bin\Debug\netcoreapp3.1\Micr
 E:\source\repos\AdventureOrderApp\AdventureOrderApp\obj\Debug\netcoreapp3.1\AdventureOrderApp.csproj.CoreCompileInputs.cache
 E:\source\repos\AdventureOrderApp\AdventureOrderApp\bin\Debug\netcoreapp3.1\AdventureOrderApp.Data.dll
 E:\source\repos\AdventureOrderApp\AdventureOrderApp\bin\Debug\netcoreapp3.1\AdventureOrderApp.Data.pdb
+E:\source\repos\AdventureOrderApp\AdventureOrderApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+E:\source\repos\AdventureOrderApp\AdventureOrderApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+E:\source\repos\AdventureOrderApp\AdventureOrderApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll

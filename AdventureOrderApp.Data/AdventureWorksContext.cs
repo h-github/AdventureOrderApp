@@ -118,7 +118,9 @@ namespace AdventureOrderApp.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseLoggerFactory(ConsoleLoggerFactory).UseSqlServer("Server=.\\SQLEXPRESS;Database=AdventureWorks2019;Trusted_Connection=True;");
+                optionsBuilder
+                    .UseLoggerFactory(ConsoleLoggerFactory)
+                    .UseSqlServer("Server=.\\SQLEXPRESS;Database=AdventureWorks2019;Trusted_Connection=True;");
             }
         }
 
