@@ -16,6 +16,7 @@ namespace AdventureOrderApp.Data
         public int BusinessEntityId { get; set; }
         public string NationalIdnumber { get; set; }
         public string LoginId { get; set; }
+        public int OrganizationNode { get; set; }
         public short? OrganizationLevel { get; set; }
         public string JobTitle { get; set; }
         public DateTime BirthDate { get; set; }

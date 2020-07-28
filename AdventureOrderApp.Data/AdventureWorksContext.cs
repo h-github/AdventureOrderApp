@@ -14,6 +14,7 @@ namespace AdventureOrderApp.Data
         public AdventureWorksContext(DbContextOptions<AdventureWorksContext> options)
             : base(options)
         {
+            //ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         public virtual DbSet<Address> Address { get; set; }
@@ -118,9 +119,9 @@ namespace AdventureOrderApp.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
+                //Only works for test env
                 optionsBuilder
-                    .UseLoggerFactory(ConsoleLoggerFactory)
-                    .UseSqlServer("Server=.\\SQLEXPRESS;Database=AdventureWorks2019;Trusted_Connection=True;");
+                    .UseSqlServer("Server=.\\SQLEXPRESS;Database=AdventureWorksTestData;Trusted_Connection=True;");
             }
         }
 
@@ -939,6 +940,9 @@ namespace AdventureOrderApp.Data
                     .HasColumnName("NationalIDNumber")
                     .HasMaxLength(15)
                     .HasComment("Unique national identification number such as a social security number.");
+
+                entity.Property(e => e.OrganizationNode)
+                    .HasComment("Where the employee is located in corporate hierarchy.");
 
                 entity.Property(e => e.OrganizationLevel)
                     .HasComment("The depth of the employee in the corporate hierarchy.")
