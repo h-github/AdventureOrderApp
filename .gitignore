@@ -2,4 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/AdventureOrderApp.API/bin/Debug/netcoreapp3.1
+/AdventureOrderApp/bin
+/AdventureOrderApp/obj
+/AdventureOrderApp.API/bin
+/AdventureOrderApp.API/obj
+/AdventureOrderApp.Data/bin
+/AdventureOrderApp.Data/obj
+/Tests/bin
+/Tests/obj

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureOrderApp", "Advent
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{1C7C2798-ACC5-4C27-92E0-B8191D95A9D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureOrderApp.API", "AdventureOrderApp.API\AdventureOrderApp.API.csproj", "{916C32B0-A9E3-47A7-AC10-CD74B29B0590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1C7C2798-ACC5-4C27-92E0-B8191D95A9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C7C2798-ACC5-4C27-92E0-B8191D95A9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C7C2798-ACC5-4C27-92E0-B8191D95A9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{916C32B0-A9E3-47A7-AC10-CD74B29B0590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916C32B0-A9E3-47A7-AC10-CD74B29B0590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916C32B0-A9E3-47A7-AC10-CD74B29B0590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916C32B0-A9E3-47A7-AC10-CD74B29B0590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
