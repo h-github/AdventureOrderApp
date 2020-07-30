@@ -31,6 +31,9 @@ namespace AdventureOrderApp.API
             services.AddDbContext<AdventureWorksContext>(opt =>
                 opt.UseSqlServer(Configuration.GetConnectionString("AdventureWorksConnectionString"))
                    .EnableSensitiveDataLogging());
+
+            // Register the Swagger services
+            services.AddSwaggerDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +52,10 @@ namespace AdventureOrderApp.API
             {
                 endpoints.MapControllers();
             });
+
+            // Register the Swagger generator and the Swagger UI middlewares
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }
