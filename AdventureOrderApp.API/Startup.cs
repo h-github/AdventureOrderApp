@@ -33,7 +33,7 @@ namespace AdventureOrderApp.API
                    .EnableSensitiveDataLogging());
 
             // Register the Swagger services
-            services.AddSwaggerDocument();
+            services.AddSwaggerDocument(dgs => dgs.Title = "Adventure Order API");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
