@@ -1,5 +1,6 @@
 using AdventureOrderApp.Data;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Diagnostics;
 
 namespace Tests
@@ -8,20 +9,26 @@ namespace Tests
     public class DatabaseTests
     {
         [TestMethod]
-        public void CanInsertSalesOrderHeaderIntoDatabase()
+        public void CanInsertPersonIntoDatabase()
         {
-            using(var context = new AdventureWorksContext())
+            using (var context = new AdventureWorksContext())
             {
-                context.Database.EnsureDeleted();
-                context.Database.EnsureCreated();
+                var person = new Person()
+                {
+                    PersonType = "SC",
+                    NameStyle = false,
+                    FirstName = "John",
+                    LastName = "Smith",
+                    EmailPromotion = 0,
+                };
 
-                var salesOrderHeader = new SalesOrderHeader();
-                context.SalesOrderHeader.Add(salesOrderHeader);
-                Debug.WriteLine($"Before save: {salesOrderHeader.SalesOrderId}");
+                context.Person.Add(person);
+                
+                Debug.WriteLine($"Before save: {person.BusinessEntityId}");
                 context.SaveChanges();
-                Debug.WriteLine($"After save: {salesOrderHeader.SalesOrderId}");
+                Debug.WriteLine($"After save: {person.BusinessEntityId}");
 
-                Assert.AreNotEqual(0, salesOrderHeader.SalesOrderId);
+                Assert.AreNotEqual(0, person.BusinessEntityId);
             }
         }
     }

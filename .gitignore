@@ -10,3 +10,7 @@
 /AdventureOrderApp.Data/obj
 /Tests/bin
 /Tests/obj
+
+bin
+obj
+packages
