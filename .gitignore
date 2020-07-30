@@ -2,15 +2,13 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 /.vs
-/AdventureOrderApp/bin
-/AdventureOrderApp/obj
-/AdventureOrderApp.API/bin
-/AdventureOrderApp.API/obj
-/AdventureOrderApp.Data/bin
-/AdventureOrderApp.Data/obj
-/Tests/bin
-/Tests/obj
-
 bin
 obj
 packages
+
+
+#################################
+# git rm -r --cached .
+# git add .
+# git commit -am "Remove ignored files"
+##################################
